@@ -175,7 +175,7 @@ module.exports = {
 
       new CopyWebpackPlugin([
         { from: './manifest.json', to: 'manifest.json' },
-        { from: '../../js/assets/parity-logo-black-no-text.png', to: 'icon.png' }
+        { from: '../assets/images/parity-logo-black-no-text.png', to: 'icon.png' }
       ], {})
     );
 
