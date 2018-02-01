@@ -1,9 +1,14 @@
 #!/bin/bash
 set -e
 
+if [ "$TRAVIS_PULL_REQUEST" != "false" -o "$TRAVIS_BRANCH" != "master" ]; then
+  echo "Not on master branch, skipping precompiled update"
+  exit 0
+fi
+
 # variables
-PVER="1-9"
-PTYPE="v1"
+PVER="1-10"
+PTYPE="wallet"
 UTCDATE=`date -u "+%Y%m%d-%H%M%S"`
 PRE_REPO="js-dist-paritytech/parity-${CI_BUILD_REF_NAME}-${PVER}-${PTYPE}.git"
 PRE_REPO_TOKEN="https://${GITHUB_JS_PRECOMPILED}:@github.com/${PRE_REPO}"
