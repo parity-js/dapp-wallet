@@ -19,7 +19,6 @@ export Accounts from './Accounts';
 export Address from './Address';
 export Addresses from './Addresses';
 export Application from './Application';
-export Contract from './Contract';
 // export Dapp from './Dapp';
 // export Dapps from './Dapps';
 export Home from './Home';
