@@ -20,7 +20,6 @@ export CreateWallet from './CreateWallet';
 export DappPermissions from './DappPermissions';
 export DappsVisible from './AddDapps';
 export DeleteAccount from './DeleteAccount';
-export DeployContract from './DeployContract';
 export EditMeta from './EditMeta';
 export ExportAccount from './ExportAccount';
 export Faucet from './Faucet';

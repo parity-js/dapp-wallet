@@ -29,7 +29,6 @@ import createWallet from './createWallet';
 import dapp from './dapp';
 import dapps from './dapps';
 import deleteAccount from './deleteAccount';
-import deployContract from './deployContract';
 import editMeta from './editMeta';
 import errors from './errors';
 import extension from './extension';
@@ -72,7 +71,6 @@ export default {
   dapp,
   dapps,
   deleteAccount,
-  deployContract,
   editMeta,
   errors,
   extension,

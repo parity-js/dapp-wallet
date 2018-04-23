@@ -26,7 +26,7 @@ import { throttle } from 'lodash';
 import { Actionbar, ActionbarExport, ActionbarImport, Button, Page, Select, Input } from '~/ui';
 import { CancelIcon, ListIcon, SaveIcon, SendIcon, SettingsIcon } from '~/ui/Icons';
 import Editor from '~/ui/Editor';
-import { DeployContract, SaveContract, LoadContract } from '~/modals';
+import { SaveContract, LoadContract } from '~/modals';
 
 import WriteContractStore from './writeContractStore';
 import styles from './writeContract.css';
@@ -90,7 +90,6 @@ class WriteContract extends Component {
 
     return (
       <div className={ styles.outer }>
-        { this.renderDeployModal() }
         { this.renderSaveModal() }
         { this.renderLoadModal() }
         { this.renderActionBar() }
@@ -436,25 +435,6 @@ class WriteContract extends Component {
           { buildsList }
         </Select>
       </div>
-    );
-  }
-
-  renderDeployModal () {
-    const { showDeployModal, contract, sourcecode } = this.store;
-
-    if (!showDeployModal) {
-      return null;
-    }
-
-    return (
-      <DeployContract
-        abi={ contract.interface }
-        accounts={ this.props.accounts }
-        code={ `0x${contract.bytecode}` }
-        source={ sourcecode }
-        onClose={ this.store.handleCloseDeployModal }
-        readOnly
-      />
     );
   }
 

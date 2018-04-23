@@ -29,7 +29,6 @@ export createWallet from './createWallet';
 export dapp from './dapp';
 export dapps from './dapps';
 export deleteAccount from './deleteAccount';
-export deployContract from './deployContract';
 export editMeta from './editMeta';
 export errors from './errors';
 export extension from './extension';

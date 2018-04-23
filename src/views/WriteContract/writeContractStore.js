@@ -258,14 +258,6 @@ export default class WriteContractStore {
     return this.loadingSolidity;
   }
 
-  @action handleOpenDeployModal = () => {
-    this.showDeployModal = true;
-  }
-
-  @action handleCloseDeployModal = () => {
-    this.showDeployModal = false;
-  }
-
   @action handleOpenLoadModal = () => {
     this.showLoadModal = true;
   }
