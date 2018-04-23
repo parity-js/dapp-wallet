@@ -37,7 +37,6 @@ export firstRun from './firstRun';
 export home from './home';
 export parityBar from './parityBar';
 export passwordChange from './passwordChange';
-export saveContract from './saveContract';
 export settings from './settings';
 export shapeshift from './shapeshift';
 export signer from './signer';

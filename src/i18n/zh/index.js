@@ -37,7 +37,6 @@ import firstRun from './firstRun';
 import home from './home';
 import parityBar from './parityBar';
 import passwordChange from './passwordChange';
-import saveContract from './saveContract';
 import settings from './settings';
 import shapeshift from './shapeshift';
 import signer from './signer';
@@ -77,7 +76,6 @@ export default {
   home,
   parityBar,
   passwordChange,
-  saveContract,
   settings,
   signer,
   shapeshift,

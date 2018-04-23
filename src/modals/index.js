@@ -24,7 +24,6 @@ export EditMeta from './EditMeta';
 export ExportAccount from './ExportAccount';
 export Faucet from './Faucet';
 export PasswordManager from './PasswordManager';
-export SaveContract from './SaveContract';
 export Shapeshift from './Shapeshift';
 export Transfer from './Transfer';
 export UpgradeParity from './UpgradeParity';
