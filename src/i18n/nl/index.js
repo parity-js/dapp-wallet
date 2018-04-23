@@ -53,7 +53,6 @@ import verification from './verification';
 import wallet from './wallet';
 import walletSettings from './walletSettings';
 import web from './web';
-import writeContract from './writeContract';
 
 export default {
   account,
@@ -94,6 +93,5 @@ export default {
   verification,
   wallet,
   walletSettings,
-  web,
-  writeContract
+  web
 };

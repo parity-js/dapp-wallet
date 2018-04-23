@@ -31,4 +31,3 @@ export Status from './Status';
 export Vaults from './Vaults';
 export Wallet from './Wallet';
 export Web from './Web';
-export WriteContract from './WriteContract';

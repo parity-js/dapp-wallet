@@ -170,20 +170,6 @@ class Contracts extends Component {
         }
         onClick={ this.onDeployContract }
       />,
-      <Link
-        to='/contracts/develop'
-        key='writeContract'
-      >
-        <Button
-          icon={ <DevelopIcon /> }
-          label={
-            <FormattedMessage
-              id='contracts.buttons.develop'
-              defaultMessage='develop'
-            />
-          }
-        />
-      </Link>,
 
       this.renderSearchButton(),
       this.renderSortButton()

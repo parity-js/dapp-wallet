@@ -53,4 +53,3 @@ export verification from './verification';
 export wallet from './wallet';
 export walletSettings from './walletSettings';
 export web from './web';
-export writeContract from './writeContract';

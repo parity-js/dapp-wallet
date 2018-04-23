@@ -15,7 +15,7 @@
 // along with Parity.  If not, see <http://www.gnu.org/licenses/>.
 
 import HistoryStore from '~/mobx/historyStore';
-import { Accounts, Account, Addresses, Address, Application, Contract, Contracts, Home, Settings, SettingsBackground, SettingsParity, SettingsProxy, SettingsViews, Status, Vaults, Wallet, Web, WriteContract } from '~/views';
+import { Accounts, Account, Addresses, Address, Application, Contract, Contracts, Home, Settings, SettingsBackground, SettingsParity, SettingsProxy, SettingsViews, Status, Vaults, Wallet, Web } from '~/views';
 // import builtinDapps from '~/views/Dapps/builtin.json';
 
 const accountsHistory = HistoryStore.get('accounts');
@@ -67,7 +67,6 @@ const addressesRoutes = [
 ];
 
 const contractsRoutes = [
-  { path: 'develop', component: WriteContract },
   { path: ':address', component: Contract }
 ];
 
