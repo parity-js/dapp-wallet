@@ -35,7 +35,6 @@ export extension from './extension';
 export faucet from './faucet';
 export firstRun from './firstRun';
 export home from './home';
-export loadContract from './loadContract';
 export parityBar from './parityBar';
 export passwordChange from './passwordChange';
 export saveContract from './saveContract';

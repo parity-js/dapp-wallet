@@ -23,7 +23,6 @@ export DeleteAccount from './DeleteAccount';
 export EditMeta from './EditMeta';
 export ExportAccount from './ExportAccount';
 export Faucet from './Faucet';
-export LoadContract from './LoadContract';
 export PasswordManager from './PasswordManager';
 export SaveContract from './SaveContract';
 export Shapeshift from './Shapeshift';

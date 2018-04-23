@@ -35,7 +35,6 @@ import extension from './extension';
 import faucet from './faucet';
 import firstRun from './firstRun';
 import home from './home';
-import loadContract from './loadContract';
 import parityBar from './parityBar';
 import passwordChange from './passwordChange';
 import saveContract from './saveContract';
@@ -76,7 +75,6 @@ export default {
   faucet,
   firstRun,
   home,
-  loadContract,
   parityBar,
   passwordChange,
   saveContract,
