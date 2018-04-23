@@ -20,7 +20,6 @@ export Address from './Address';
 export Addresses from './Addresses';
 export Application from './Application';
 export Contract from './Contract';
-export Contracts from './Contracts';
 // export Dapp from './Dapp';
 // export Dapps from './Dapps';
 export Home from './Home';

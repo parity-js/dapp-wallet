@@ -23,7 +23,6 @@ import addressSelect from './addressSelect';
 import application from './application';
 import connection from './connection';
 import contract from './contract';
-import contracts from './contracts';
 import createAccount from './createAccount';
 import createWallet from './createWallet';
 import dapp from './dapp';
@@ -62,7 +61,6 @@ export default {
   application,
   connection,
   contract,
-  contracts,
   createAccount,
   createWallet,
   dapp,

@@ -23,7 +23,6 @@ export addresses from './addresses';
 export application from './application';
 export connection from './connection';
 export contract from './contract';
-export contracts from './contracts';
 export createAccount from './createAccount';
 export createWallet from './createWallet';
 export dapp from './dapp';
