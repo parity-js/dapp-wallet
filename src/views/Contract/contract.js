@@ -20,7 +20,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import BigNumber from 'bignumber.js';
 
-import { EditMeta, ExecuteContract } from '~/modals';
+import { EditMeta } from '~/modals';
 import { newError } from '~/redux/actions';
 import { setVisibleAccounts } from '~/redux/providers/personalActions';
 import { Actionbar, Button, Page, Portal } from '~/ui';
@@ -141,7 +141,6 @@ class Contract extends Component {
         { this.renderActionbar(account) }
         { this.renderDeleteDialog(account) }
         { this.renderEditDialog(account) }
-        { this.renderExecuteDialog() }
         <Page padded>
           <Header
             account={ account }
@@ -343,25 +342,6 @@ class Contract extends Component {
     );
   }
 
-  renderExecuteDialog () {
-    const { contract, fromAddress, showExecuteDialog } = this.state;
-    const { accounts } = this.props;
-
-    if (!showExecuteDialog) {
-      return null;
-    }
-
-    return (
-      <ExecuteContract
-        accounts={ accounts }
-        contract={ contract }
-        fromAddress={ fromAddress }
-        onClose={ this.closeExecuteDialog }
-        onFromAddressChange={ this.onFromAddressChange }
-      />
-    );
-  }
-
   queryContract = () => {
     const { contract } = this.state;
 
@@ -415,10 +395,6 @@ class Contract extends Component {
 
   closeDetailsDialog = () => {
     this.setState({ showDetailsDialog: false });
-  }
-
-  closeExecuteDialog = () => {
-    this.setState({ showExecuteDialog: false });
   }
 
   showExecuteDialog = () => {

@@ -32,7 +32,6 @@ export deleteAccount from './deleteAccount';
 export deployContract from './deployContract';
 export editMeta from './editMeta';
 export errors from './errors';
-export executeContract from './executeContract';
 export extension from './extension';
 export faucet from './faucet';
 export firstRun from './firstRun';

@@ -32,7 +32,6 @@ import deleteAccount from './deleteAccount';
 import deployContract from './deployContract';
 import editMeta from './editMeta';
 import errors from './errors';
-import executeContract from './executeContract';
 import extension from './extension';
 import faucet from './faucet';
 import firstRun from './firstRun';
@@ -76,7 +75,6 @@ export default {
   deployContract,
   editMeta,
   errors,
-  executeContract,
   extension,
   faucet,
   firstRun,

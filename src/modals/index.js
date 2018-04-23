@@ -22,7 +22,6 @@ export DappsVisible from './AddDapps';
 export DeleteAccount from './DeleteAccount';
 export DeployContract from './DeployContract';
 export EditMeta from './EditMeta';
-export ExecuteContract from './ExecuteContract';
 export ExportAccount from './ExportAccount';
 export Faucet from './Faucet';
 export LoadContract from './LoadContract';
