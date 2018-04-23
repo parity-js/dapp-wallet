@@ -21,7 +21,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { uniq, isEqual } from 'lodash';
 
-import { AddContract, DeployContract } from '~/modals';
+import { DeployContract } from '~/modals';
 import { setVisibleAccounts } from '~/redux/providers/personalActions';
 import { Actionbar, ActionbarSearch, ActionbarSort, Button, Page } from '~/ui';
 import { AddIcon, DevelopIcon } from '~/ui/Icons';
@@ -101,7 +101,6 @@ class Contracts extends Component {
     return (
       <div>
         { this.renderActionbar() }
-        { this.renderAddContract() }
         { this.renderDeployContract() }
         <Page>
           <List
@@ -203,22 +202,6 @@ class Contracts extends Component {
     );
   }
 
-  renderAddContract () {
-    const { contracts } = this.props;
-    const { addContract } = this.state;
-
-    if (!addContract) {
-      return null;
-    }
-
-    return (
-      <AddContract
-        contracts={ contracts }
-        onClose={ this.onAddContractClose }
-      />
-    );
-  }
-
   renderDeployContract () {
     const { accounts } = this.props;
     const { deployContract } = this.state;
@@ -252,14 +235,6 @@ class Contracts extends Component {
 
   onDeployContract = () => {
     this.setState({ deployContract: true });
-  }
-
-  onAddContractClose = () => {
-    this.setState({ addContract: false });
-  }
-
-  onAddContract = () => {
-    this.setState({ addContract: true });
   }
 }
 

@@ -17,7 +17,6 @@
 export account from './account';
 export accounts from './accounts';
 export addAddress from './addAddress';
-export addContract from './addContract';
 export address from './address';
 export addressSelect from './addressSelect';
 export addresses from './addresses';

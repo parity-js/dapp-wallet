@@ -15,7 +15,6 @@
 // along with Parity.  If not, see <http://www.gnu.org/licenses/>.
 
 export AddAddress from './AddAddress';
-export AddContract from './AddContract';
 export CreateAccount from './CreateAccount';
 export CreateWallet from './CreateWallet';
 export DappPermissions from './DappPermissions';

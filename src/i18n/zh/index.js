@@ -17,7 +17,6 @@
 import account from './account';
 import accounts from './accounts';
 import addAddress from './addAddress';
-import addContract from './addContract';
 import address from './address';
 import addressSelect from './addressSelect';
 import addresses from './addresses';
@@ -62,7 +61,6 @@ export default {
   account,
   accounts,
   addAddress,
-  addContract,
   address,
   addresses,
   addressSelect,
