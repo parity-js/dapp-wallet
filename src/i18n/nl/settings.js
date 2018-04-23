@@ -72,10 +72,6 @@ export default {
       description: `Decentrale applicaties die gebruik maken van het onderliggende Ethereum netwerk. Voeg applicaties toe, beheer je applicatie portfolio en maak gebruik van applicaties op het wereldwijde netwerk.`,
       label: `Applicaties`
     },
-    contracts: {
-      description: `Monitor, volg en maak gebruik van specifieke contracten die op het netwerk zijn gezet. Dit is een meer technisch gerichte omgeving, voornamelijk bedoeld voor geavanceerde gebruikers die de werking van bepaalde contracten goed begrijpen.`,
-      label: `Contracten`
-    },
     overview_0: `Beheer de beschikbare weergaven van deze interface, en selecteer enkel de delen van de applicatie die voor jou van belang zijn.`,
     overview_1: `Ben je een eind gebruiker? De standaard instellingen zijn geschikt voor zowel beginners als gevorderde gebruikers.`,
     overview_2: `Ben je een ontwikkelaar? Voeg enkele functies toe om je contracten te beheren en gebruik te maken van gedecentraliseerde applicaties.`,

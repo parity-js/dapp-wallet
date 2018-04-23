@@ -57,12 +57,6 @@ class Views extends Component {
             </div>
             <div>
               <FormattedMessage
-                id='settings.views.overview_2'
-                defaultMessage='Are you a developer? Add some features to manage contracts and interact with application deployments.'
-              />
-            </div>
-            <div>
-              <FormattedMessage
                 id='settings.views.overview_3'
                 defaultMessage='Are you a miner or run a large-scale node? Add the features to give you all the information needed to watch the node operation.'
               />
@@ -88,17 +82,6 @@ class Views extends Component {
                 <FormattedMessage
                   id='settings.views.addresses.description'
                   defaultMessage='A list of all contacts and address book entries managed by this Parity instance. Watch accounts and have the details available at the click of a button when transacting.'
-                />
-              )
-            }
-            {
-              this.renderView('contracts',
-                <FormattedMessage
-                  id='settings.views.contracts.label'
-                />,
-                <FormattedMessage
-                  id='settings.views.contracts.description'
-                  defaultMessage='Watch and interact with specific contracts that have been deployed on the network. This is a more technically-focused environment, specifically for advanced users that understand the inner working of certain contracts.'
                 />
               )
             }

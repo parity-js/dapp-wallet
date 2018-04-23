@@ -76,10 +76,6 @@ export default {
       label: 'Anwendungen',
       description: 'Dezentrale Anwendungen, die mit dem Netzwerk interagieren. Füge Anwendungen hinzu, entferne oder öffne Anwendungen.'
     },
-    contracts: {
-      label: 'Contracts',
-      description: 'Interagiere mit Smart Contracts im Netzwerk. Diese Umgebung ist auf Fortgeschrittene mit gutem Verständnis der Fuktionsweise von Smart Contracts zugeschnitten.'
-    },
     status: {
       label: 'Status',
       description: 'Schau dir an, wie sich dein Parity-Knoten schlägt. Hier findest du zum Beispiel die Anzahl der aktuellen Verbindungen zum Netzwerk, Logs deiner laufenden Instanz und (sofern konfiguriert) Details zum Mining.'
