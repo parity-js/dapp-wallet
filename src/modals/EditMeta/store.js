@@ -97,11 +97,8 @@ export default class Store {
       meta.passwordHint = this.passwordHint;
     }
 
-    return Promise
-      .all([
-        this._api.parity.setAccountName(this.address, this.name),
-        this._api.parity.setAccountMeta(this.address, Object.assign({}, this.meta, meta))
-      ])
+    return this._api.parity.setAccountName(this.address, this.name)
+      .then(() => this._api.parity.setAccountMeta(this.address, Object.assign({}, this.meta, meta)))
       .then(() => {
         if (vaultStore && this.isAccount && (this.meta.vault !== this.vaultName)) {
           return vaultStore.moveAccount(this.vaultName, this.address);
