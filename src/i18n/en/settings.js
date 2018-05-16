@@ -44,10 +44,6 @@ export default {
       label: 'Applications'
     },
 
-    contracts: {
-      label: 'Contracts'
-    },
-
     home: {
       label: 'Home'
     },

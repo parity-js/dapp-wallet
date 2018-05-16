@@ -15,20 +15,15 @@
 // along with Parity.  If not, see <http://www.gnu.org/licenses/>.
 
 export AddAddress from './AddAddress';
-export AddContract from './AddContract';
 export CreateAccount from './CreateAccount';
 export CreateWallet from './CreateWallet';
 export DappPermissions from './DappPermissions';
 export DappsVisible from './AddDapps';
 export DeleteAccount from './DeleteAccount';
-export DeployContract from './DeployContract';
 export EditMeta from './EditMeta';
-export ExecuteContract from './ExecuteContract';
 export ExportAccount from './ExportAccount';
 export Faucet from './Faucet';
-export LoadContract from './LoadContract';
 export PasswordManager from './PasswordManager';
-export SaveContract from './SaveContract';
 export Shapeshift from './Shapeshift';
 export Transfer from './Transfer';
 export UpgradeParity from './UpgradeParity';

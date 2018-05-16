@@ -17,31 +17,24 @@
 import account from './account';
 import accounts from './accounts';
 import addAddress from './addAddress';
-import addContract from './addContract';
 import address from './address';
 import addresses from './addresses';
 import addressSelect from './addressSelect';
 import application from './application';
 import connection from './connection';
-import contract from './contract';
-import contracts from './contracts';
 import createAccount from './createAccount';
 import createWallet from './createWallet';
 import dapp from './dapp';
 import dapps from './dapps';
 import deleteAccount from './deleteAccount';
-import deployContract from './deployContract';
 import editMeta from './editMeta';
 import errors from './errors';
-import executeContract from './executeContract';
 import extension from './extension';
 import faucet from './faucet';
 import firstRun from './firstRun';
 import home from './home';
-import loadContract from './loadContract';
 import parityBar from './parityBar';
 import passwordChange from './passwordChange';
-import saveContract from './saveContract';
 import settings from './settings';
 import shapeshift from './shapeshift';
 import signer from './signer';
@@ -56,37 +49,29 @@ import verification from './verification';
 import wallet from './wallet';
 import walletSettings from './walletSettings';
 import web from './web';
-import writeContract from './writeContract';
 
 export default {
   account,
   accounts,
   addAddress,
-  addContract,
   address,
   addresses,
   addressSelect,
   application,
   connection,
-  contract,
-  contracts,
   createAccount,
   createWallet,
   dapp,
   dapps,
   deleteAccount,
-  deployContract,
   editMeta,
   errors,
-  executeContract,
   extension,
   faucet,
   firstRun,
   home,
-  loadContract,
   parityBar,
   passwordChange,
-  saveContract,
   settings,
   shapeshift,
   signer,
@@ -100,6 +85,5 @@ export default {
   verification,
   wallet,
   walletSettings,
-  web,
-  writeContract
+  web
 };

@@ -86,12 +86,6 @@ export default {
       // interact with application from around the network.
       label: `应用` // Applications
     },
-    contracts: {
-      description: `观察和交互已经被部署在网络上的特定合约。这是一个更注重技术的环境，特别为可以理解合约内部运行机制的高级用户所设立。`,
-      // Watch and interact with specific contracts that have been deployed on the network. This is a more technically-focused environment,
-      // specifically for advanced users that understand the inner working of certain contracts.
-      label: `合约` // Contracts
-    },
     overview_0: `仅可视部分对你可用的应用来管理应用界面`,
     // Manage the available application views using only the parts of the application applicable to you.
     overview_1: `你是终端用户？默认设置为初学者和高级用户进行了相同的设置。`,
