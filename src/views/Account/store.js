@@ -20,11 +20,9 @@ export default class Store {
   @observable isDeleteVisible = false;
   @observable isEditVisible = false;
   @observable isExportVisible = false;
-  @observable isFaucetVisible = false;
   @observable isFundVisible = false;
   @observable isPasswordVisible = false;
   @observable isTransferVisible = false;
-  @observable isVerificationVisible = false;
 
   @action toggleDeleteDialog = () => {
     this.isDeleteVisible = !this.isDeleteVisible;
@@ -38,10 +36,6 @@ export default class Store {
     this.isExportVisible = !this.isExportVisible;
   }
 
-  @action toggleFaucetDialog = () => {
-    this.isFaucetVisible = !this.isFaucetVisible;
-  }
-
   @action toggleFundDialog = () => {
     this.isFundVisible = !this.isFundVisible;
   }
@@ -52,9 +46,5 @@ export default class Store {
 
   @action toggleTransferDialog = () => {
     this.isTransferVisible = !this.isTransferVisible;
-  }
-
-  @action toggleVerificationDialog = () => {
-    this.isVerificationVisible = !this.isVerificationVisible;
   }
 }

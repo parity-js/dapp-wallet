@@ -24,7 +24,7 @@ import { newError } from '~/redux/actions';
 import shapeshiftBtn from '~/../assets/images/shapeshift-btn.png';
 import HardwareStore from '~/mobx/hardwareStore';
 import ExportStore from '~/modals/ExportAccount/exportStore';
-import { DeleteAccount, EditMeta, Faucet, PasswordManager, Shapeshift, Transfer } from '~/modals';
+import { DeleteAccount, EditMeta, PasswordManager, Shapeshift, Transfer } from '~/modals';
 import { setVisibleAccounts } from '~/redux/providers/personalActions';
 import { Actionbar, Button, ConfirmDialog, Input, Page, Portal } from '~/ui';
 import { DeleteIcon, DialIcon, EditIcon, LockedIcon, SendIcon, VerifyIcon, FileDownloadIcon } from '~/ui/Icons';
@@ -107,7 +107,6 @@ class Account extends Component {
         { this.renderDeleteDialog(account) }
         { this.renderEditDialog(account) }
         { this.renderExportDialog() }
-        { this.renderFaucetDialog() }
         { this.renderFundDialog() }
         { this.renderPasswordDialog(account) }
         { this.renderTransferDialog(account) }
@@ -350,24 +349,6 @@ class Account extends Component {
           />
         </ConfirmDialog>
       </Portal>
-    );
-  }
-
-  renderFaucetDialog () {
-    const { netVersion } = this.props;
-
-    if (!this.store.isFaucetVisible) {
-      return null;
-    }
-
-    const { address } = this.props.params;
-
-    return (
-      <Faucet
-        address={ address }
-        netVersion={ netVersion }
-        onClose={ this.store.toggleFaucetDialog }
-      />
     );
   }
 

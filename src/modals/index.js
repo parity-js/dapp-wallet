@@ -22,7 +22,6 @@ export DappsVisible from './AddDapps';
 export DeleteAccount from './DeleteAccount';
 export EditMeta from './EditMeta';
 export ExportAccount from './ExportAccount';
-export Faucet from './Faucet';
 export PasswordManager from './PasswordManager';
 export Shapeshift from './Shapeshift';
 export Transfer from './Transfer';
