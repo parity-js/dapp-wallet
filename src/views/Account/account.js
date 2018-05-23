@@ -27,7 +27,7 @@ import ExportStore from '~/modals/ExportAccount/exportStore';
 import { DeleteAccount, EditMeta, PasswordManager, Shapeshift, Transfer } from '~/modals';
 import { setVisibleAccounts } from '~/redux/providers/personalActions';
 import { Actionbar, Button, ConfirmDialog, Input, Page, Portal } from '~/ui';
-import { DeleteIcon, DialIcon, EditIcon, LockedIcon, SendIcon, VerifyIcon, FileDownloadIcon } from '~/ui/Icons';
+import { DeleteIcon, EditIcon, LockedIcon, SendIcon, FileDownloadIcon } from '~/ui/Icons';
 
 import DeleteAddress from '../Address/Delete';
 
@@ -45,9 +45,7 @@ class Account extends Component {
   static propTypes = {
     accounts: PropTypes.object.isRequired,
     setVisibleAccounts: PropTypes.func.isRequired,
-
     account: PropTypes.object,
-    certifications: PropTypes.object,
     netVersion: PropTypes.string.isRequired,
     newError: PropTypes.func,
     params: PropTypes.object
@@ -133,9 +131,6 @@ class Account extends Component {
   }
 
   renderActionbar (account) {
-    const { certifications, netVersion } = this.props;
-    const { address } = this.props.params;
-
     const buttons = [
       <Button
         icon={ <SendIcon /> }
@@ -422,7 +417,6 @@ function mapStateToProps (state, props) {
   const { address } = props.params;
 
   const { accounts } = state.personal;
-  const certifications = state.certifications;
   const { netVersion } = state.nodeStatus;
 
   const account = (accounts || {})[address];
@@ -430,7 +424,6 @@ function mapStateToProps (state, props) {
   return {
     account,
     accounts,
-    certifications,
     netVersion
   };
 }
