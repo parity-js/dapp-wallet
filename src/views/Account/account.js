@@ -24,7 +24,7 @@ import { newError } from '~/redux/actions';
 import shapeshiftBtn from '~/../assets/images/shapeshift-btn.png';
 import HardwareStore from '~/mobx/hardwareStore';
 import ExportStore from '~/modals/ExportAccount/exportStore';
-import { DeleteAccount, EditMeta, Faucet, PasswordManager, Shapeshift, Transfer, Verification } from '~/modals';
+import { DeleteAccount, EditMeta, Faucet, PasswordManager, Shapeshift, Transfer } from '~/modals';
 import { setVisibleAccounts } from '~/redux/providers/personalActions';
 import { Actionbar, Button, ConfirmDialog, Input, Page, Portal } from '~/ui';
 import { DeleteIcon, DialIcon, EditIcon, LockedIcon, SendIcon, VerifyIcon, FileDownloadIcon } from '~/ui/Icons';
@@ -111,7 +111,6 @@ class Account extends Component {
         { this.renderFundDialog() }
         { this.renderPasswordDialog(account) }
         { this.renderTransferDialog(account) }
-        { this.renderVerificationDialog() }
         { this.renderActionbar(account) }
         <Page padded>
           <Header
@@ -134,26 +133,9 @@ class Account extends Component {
     return netVersion === '1';
   }
 
-  isFaucettable = (netVersion, certifications, address) => {
-    return this.isKovan(netVersion) || (
-      this.isMainnet(netVersion) &&
-      this.isSmsCertified(certifications, address)
-    );
-  }
-
-  isSmsCertified = (_certifications, address) => {
-    const certifications = _certifications && _certifications[address]
-      ? _certifications[address].filter((cert) => cert.name.indexOf('smsverification') === 0)
-      : [];
-
-    return certifications.length !== 0;
-  }
-
   renderActionbar (account) {
     const { certifications, netVersion } = this.props;
     const { address } = this.props.params;
-    const isVerifiable = this.isMainnet(netVersion);
-    const isFaucettable = this.isFaucettable(netVersion, certifications, address);
 
     const buttons = [
       <Button
@@ -183,36 +165,6 @@ class Account extends Component {
         }
         onClick={ this.store.toggleFundDialog }
       />,
-      isVerifiable
-        ? (
-          <Button
-            icon={ <VerifyIcon /> }
-            key='verification'
-            label={
-              <FormattedMessage
-                id='account.button.verify'
-                defaultMessage='verify'
-              />
-            }
-            onClick={ this.store.toggleVerificationDialog }
-          />
-        )
-        : null,
-      isFaucettable
-        ? (
-          <Button
-            icon={ <DialIcon /> }
-            key='faucet'
-            label={
-              <FormattedMessage
-                id='account.button.faucet'
-                defaultMessage='Kovan ETH'
-              />
-            }
-            onClick={ this.store.toggleFaucetDialog }
-          />
-        )
-        : null,
       <Button
         icon={ <EditIcon /> }
         key='editmeta'
@@ -456,21 +408,6 @@ class Account extends Component {
       <Transfer
         account={ account }
         onClose={ this.store.toggleTransferDialog }
-      />
-    );
-  }
-
-  renderVerificationDialog () {
-    if (!this.store.isVerificationVisible) {
-      return null;
-    }
-
-    const { address } = this.props.params;
-
-    return (
-      <Verification
-        account={ address }
-        onClose={ this.store.toggleVerificationDialog }
       />
     );
   }
