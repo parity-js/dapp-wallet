@@ -16,6 +16,12 @@
 
 import { createElement } from 'react';
 
+function createLinkExternal (props) {
+  const { children, href, title, style } = props;
+
+  return createElement('a', { href, title, style, target: '_blank' }, children);
+}
+
 export function createRenderers (tagStyles = {}) {
   return Object
     .keys(tagStyles)
@@ -23,15 +29,10 @@ export function createRenderers (tagStyles = {}) {
       switch (tag) {
         case 'a':
         case 'link':
-          renderers['link'] = (mdProps) => {
-            const { children, href, title } = mdProps;
-            const style = tagStyles[tag];
-
-            return createElement('a', { href, title, style }, children);
-          };
+          renderers['link'] = (mdProps) => createLinkExternal({ ...mdProps, style: tagStyles[tag] });
           break;
       }
 
       return renderers;
-    }, {});
+    }, { link: createLinkExternal });
 }
