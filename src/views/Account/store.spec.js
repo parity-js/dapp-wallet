@@ -31,11 +31,9 @@ describe('views/Account/Store', () => {
     it('sets all modal visibility to false', () => {
       expect(store.isDeleteVisible).to.be.false;
       expect(store.isEditVisible).to.be.false;
-      expect(store.isFaucetVisible).to.be.false;
       expect(store.isFundVisible).to.be.false;
       expect(store.isPasswordVisible).to.be.false;
       expect(store.isTransferVisible).to.be.false;
-      expect(store.isVerificationVisible).to.be.false;
     });
   });
 
@@ -51,13 +49,6 @@ describe('views/Account/Store', () => {
       it('toggles the visibility', () => {
         store.toggleEditDialog();
         expect(store.isEditVisible).to.be.true;
-      });
-    });
-
-    describe('toggleFaucetDialog', () => {
-      it('toggles the visibility', () => {
-        store.toggleFaucetDialog();
-        expect(store.isFaucetVisible).to.be.true;
       });
     });
 
@@ -79,13 +70,6 @@ describe('views/Account/Store', () => {
       it('toggles the visibility', () => {
         store.toggleTransferDialog();
         expect(store.isTransferVisible).to.be.true;
-      });
-    });
-
-    describe('toggleVerificationDialog', () => {
-      it('toggles the visibility', () => {
-        store.toggleVerificationDialog();
-        expect(store.isVerificationVisible).to.be.true;
       });
     });
   });
