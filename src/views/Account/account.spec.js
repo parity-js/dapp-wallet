@@ -180,21 +180,5 @@ describe('views/Account', () => {
         expect(instance.renderTransferDialog().type).to.match(/Connect/);
       });
     });
-
-    describe('renderVerificationDialog', () => {
-      it('renders null when not visible', () => {
-        render();
-
-        expect(store.isVerificationVisible).to.be.false;
-        expect(instance.renderVerificationDialog()).to.be.null;
-      });
-
-      it('renders the modal when visible', () => {
-        render();
-
-        store.toggleVerificationDialog();
-        expect(instance.renderVerificationDialog().type).to.match(/Connect/);
-      });
-    });
   });
 });

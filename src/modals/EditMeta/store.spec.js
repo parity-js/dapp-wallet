@@ -217,19 +217,6 @@ describe('modals/EditMeta/Store', () => {
           expect(vaultStore.moveAccount).to.have.been.calledWith('testing', ACCOUNT.address);
         });
       });
-
-      it('calls parity.setAccountMeta with the adjusted values', () => {
-        store.setDescription('some new description');
-        store.setPasswordHint('some new passwordhint');
-        store.setTags(['taga']);
-        store.save();
-
-        expect(api.parity.setAccountMeta).to.have.been.calledWith(ACCOUNT.address, Object.assign({}, ACCOUNT.meta, {
-          description: 'some new description',
-          passwordHint: 'some new passwordhint',
-          tags: ['taga']
-        }));
-      });
     });
   });
 });
