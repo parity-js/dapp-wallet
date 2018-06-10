@@ -23,10 +23,10 @@ const initialState = {
   images: {}
 };
 
-export function hashToImageUrl (hashArray) {
+export function hashToImageUrl (hashArray, dappsUrl = '') {
   const hash = hashArray ? bytesToHex(hashArray) : ZERO;
 
-  return hash === ZERO ? null : `/api/content/${hash.substr(2)}`;
+  return hash === ZERO ? null : `${dappsUrl}/api/content/${hash.substr(2)}`;
 }
 
 export default handleActions({
