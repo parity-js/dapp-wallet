@@ -144,13 +144,15 @@ export function fetchTokensImages (api, tokenReg, tokenIndexes) {
   const calls = requests.map((req) => api.eth.call(req));
 
   return Promise.all(calls)
-    .then((results) => {
-      return results.map((rawImage) => {
-        const image = tokenReg.instance.meta.decodeOutput(rawImage)[0].value;
+    .then((results) =>
+      api._parity.dappsUrl().then(dappsUrl =>
+        results.map((rawImage) => {
+          const image = tokenReg.instance.meta.decodeOutput(rawImage)[0].value;
 
-        return hashToImageUrl(image);
-      });
-    });
+          return hashToImageUrl(image, `http://${dappsUrl}`);
+        })
+      )
+    );
 }
 
 /**
