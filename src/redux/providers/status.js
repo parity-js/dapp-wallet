@@ -210,20 +210,20 @@ export default class Status {
   }
 
   _subscribeNodeHealth = () => {
-    return this._api.pubsub
-      .parity
-      .nodeHealth((error, health) => {
-        if (error || !health) {
-          return;
-        }
-
-        health.overall = this._overallStatus(health);
-        health.peers = health.peers || {};
-        health.sync = health.sync || {};
-        health.time = health.time || {};
-
-        this._store.dispatch(statusCollection({ health }));
-      });
+    // `parity_nodeHealth` is removed in Parity 2.0.0.
+    // TODO We should return the correct health, with a combination of eth_syncing,
+    // parity_netPeers, and clock-is-sync.
+    // But that's too much work. We just return a good health in dapp-wallet.
+    // The correct health is implemented in the shell.
+    this._store.dispatch(statusCollection({
+      health: {
+        overall: { message: [], status: 'ok' },
+        peers: { details: [5, 25], message: '', status: 'ok' },
+        sync: { details: false, message: '', status: 'ok' },
+        time: { details: 129, message: '', status: 'ok' }
+      }
+    }));
+    return Promise.resolve();
   }
 
   _unsubscribeBlockNumber () {
