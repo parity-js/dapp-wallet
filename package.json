@@ -151,7 +151,7 @@
     "format-number": "2.0.1",
     "geopattern": "1.2.3",
     "isomorphic-fetch": "2.2.1",
-    "js-sha3": "0.5.5",
+    "js-sha3": "0.8.0",
     "keythereum": "1.0.4",
     "lodash": "4.17.11",
     "loglevel": "1.4.1",
