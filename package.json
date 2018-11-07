@@ -42,7 +42,7 @@
     "qrcode-generator": "kazuhikoarase/qrcode-generator"
   },
   "devDependencies": {
-    "babel-cli": "6.23.0",
+    "babel-cli": "6.26.0",
     "babel-core": "6.23.1",
     "babel-eslint": "7.1.1",
     "babel-loader": "6.3.2",
