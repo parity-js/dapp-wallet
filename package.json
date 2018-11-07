@@ -85,7 +85,7 @@
     "eslint-plugin-react": "6.10.0",
     "eslint-plugin-standard": "2.0.1",
     "express": "4.14.1",
-    "extract-loader": "0.1.0",
+    "extract-loader": "3.0.0",
     "extract-text-webpack-plugin": "2.0.0-beta.4",
     "file-loader": "0.10.0",
     "happypack": "3.0.3",
