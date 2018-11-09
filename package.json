@@ -201,7 +201,7 @@
     "utf8": "2.1.2",
     "valid-url": "1.0.9",
     "validator": "10.8.0",
-    "whatwg-fetch": "2.0.1",
+    "whatwg-fetch": "3.0.0",
     "worker-loader": "^0.8.0",
     "zxcvbn": "4.4.2"
   }
