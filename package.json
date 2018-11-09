@@ -202,7 +202,7 @@
     "valid-url": "1.0.9",
     "validator": "10.8.0",
     "whatwg-fetch": "3.0.0",
-    "worker-loader": "^0.8.0",
+    "worker-loader": "^1.1.1",
     "zxcvbn": "4.4.2"
   }
 }
