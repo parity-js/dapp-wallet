@@ -155,7 +155,7 @@
     "keythereum": "1.0.4",
     "lodash": "4.17.11",
     "loglevel": "1.4.1",
-    "material-ui": "0.16.5",
+    "material-ui": "0.20.2",
     "material-ui-chip-input": "0.16.1",
     "mobx": "2.7.0",
     "mobx-react": "4.0.3",
