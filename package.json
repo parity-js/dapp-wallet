@@ -197,7 +197,7 @@
     "u2f-api": "0.0.9",
     "u2f-api-polyfill": "0.4.4",
     "uglify-js": "3.4.9",
-    "useragent.js": "0.5.6",
+    "useragent.js": "0.5.7",
     "utf8": "3.0.0",
     "valid-url": "1.0.9",
     "validator": "10.9.0",
