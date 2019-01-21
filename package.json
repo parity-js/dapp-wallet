@@ -176,7 +176,7 @@
     "react-element-to-jsx-string": "6.0.0",
     "react-event-listener": "0.6.5",
     "react-inspector": "paritytech/react-inspector",
-    "react-intl": "2.1.5",
+    "react-intl": "2.8.0",
     "react-markdown": "2.4.4",
     "react-portal": "3.0.0",
     "react-qr-reader": "2.0.1",
