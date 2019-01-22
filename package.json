@@ -163,7 +163,7 @@
     "moment": "2.19.3",
     "napa": "2.3.0",
     "phoneformat.js": "1.0.3",
-    "promise-worker": "1.1.1",
+    "promise-worker": "2.0.0",
     "push.js": "0.0.11",
     "qs": "6.5.2",
     "react": "15.6.2",
