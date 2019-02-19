@@ -117,7 +117,7 @@
     "sinon": "1.17.7",
     "sinon-as-promised": "4.0.3",
     "sinon-chai": "2.14.0",
-    "style-loader": "0.13.1",
+    "style-loader": "0.23.1",
     "stylelint": "9.10.1",
     "stylelint-config-standard": "18.2.0",
     "to-source": "2.0.3",
