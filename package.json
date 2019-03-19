@@ -171,7 +171,7 @@
     "react-addons-css-transition-group": "15.6.2",
     "react-codemirror": "^0.3.0",
     "react-copy-to-clipboard": "5.0.1",
-    "react-dom": "15.4.2",
+    "react-dom": "15.6.2",
     "react-dropzone": "3.7.3",
     "react-element-to-jsx-string": "6.0.0",
     "react-event-listener": "0.6.5",
