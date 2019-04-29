@@ -194,7 +194,7 @@
     "solc": "ngotchac/solc-js",
     "store": "2.0.12",
     "sw-toolbox": "^3.6.0",
-    "u2f-api": "0.0.9",
+    "u2f-api": "1.0.10",
     "u2f-api-polyfill": "0.4.4",
     "uglify-js": "3.5.6",
     "useragent.js": "0.5.7",
