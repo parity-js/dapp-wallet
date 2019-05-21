@@ -196,7 +196,7 @@
     "sw-toolbox": "^3.6.0",
     "u2f-api": "1.0.10",
     "u2f-api-polyfill": "0.4.4",
-    "uglify-js": "3.5.12",
+    "uglify-js": "3.5.14",
     "useragent.js": "0.5.7",
     "utf8": "3.0.0",
     "valid-url": "1.0.9",
