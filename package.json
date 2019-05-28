@@ -200,7 +200,7 @@
     "useragent.js": "0.5.7",
     "utf8": "3.0.0",
     "valid-url": "1.0.9",
-    "validator": "10.11.0",
+    "validator": "11.0.0",
     "whatwg-fetch": "3.0.0",
     "worker-loader": "^2.0.0",
     "zxcvbn": "4.4.2"
