@@ -186,7 +186,7 @@
     "react-tap-event-plugin": "2.0.1",
     "react-tooltip": "3.10.0",
     "recharts": "1.6.2",
-    "redux": "4.0.2",
+    "redux": "4.0.4",
     "redux-actions": "2.6.5",
     "redux-thunk": "2.3.0",
     "rlp": "2.0.0",
