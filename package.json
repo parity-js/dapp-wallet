@@ -127,7 +127,7 @@
     "webpack-dev-middleware": "2.0.6",
     "webpack-error-notification": "0.1.8",
     "webpack-hot-middleware": "2.25.0",
-    "websocket": "1.0.29",
+    "websocket": "1.0.30",
     "yargs": "14.0.0"
   },
   "dependencies": {
