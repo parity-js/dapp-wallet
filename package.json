@@ -166,7 +166,7 @@
     "promise-worker": "2.0.1",
     "push.js": "1.0.12",
     "qs": "6.9.0",
-    "react": "15.6.2",
+    "react": "16.10.2",
     "react-ace": "7.0.4",
     "react-addons-css-transition-group": "15.6.2",
     "react-codemirror": "^1.0.0",
