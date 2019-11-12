@@ -96,7 +96,7 @@
     "jsdom": "9.11.0",
     "json-loader": "0.5.7",
     "mocha": "3.2.0",
-    "mock-local-storage": "1.1.8",
+    "mock-local-storage": "1.1.10",
     "mock-socket": "9.0.2",
     "nock": "11.7.0",
     "postcss-import": "12.0.1",
