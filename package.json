@@ -71,7 +71,7 @@
     "circular-dependency-plugin": "4.4.0",
     "copy-webpack-plugin": "4.6.0",
     "core-js": "2.6.5",
-    "coveralls": "3.0.7",
+    "coveralls": "3.0.8",
     "cross-env": "6.0.3",
     "css-loader": "0.28.11",
     "ejs-loader": "0.3.5",
