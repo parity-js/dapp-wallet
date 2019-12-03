@@ -95,7 +95,7 @@
     "istanbul": "1.0.0-alpha.2",
     "jsdom": "9.11.0",
     "json-loader": "0.5.7",
-    "mocha": "3.2.0",
+    "mocha": "6.2.2",
     "mock-local-storage": "1.1.11",
     "mock-socket": "9.0.2",
     "nock": "11.7.0",
