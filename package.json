@@ -132,7 +132,7 @@
   },
   "dependencies": {
     "@parity/abi": "5.1.x",
-    "@parity/api": "^2.1.23",
+    "@parity/api": "^5.1.15",
     "@parity/wordlist": "1.1.x",
     "base32.js": "0.1.0",
     "bignumber.js": "3.0.1",
