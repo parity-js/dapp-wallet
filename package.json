@@ -173,7 +173,7 @@
     "react-copy-to-clipboard": "5.0.2",
     "react-dom": "15.6.2",
     "react-dropzone": "3.7.3",
-    "react-element-to-jsx-string": "14.2.0",
+    "react-element-to-jsx-string": "14.3.1",
     "react-event-listener": "0.6.6",
     "react-inspector": "paritytech/react-inspector",
     "react-intl": "2.9.0",
