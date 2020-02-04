@@ -72,7 +72,7 @@
     "copy-webpack-plugin": "4.6.0",
     "core-js": "2.6.5",
     "coveralls": "3.0.9",
-    "cross-env": "6.0.3",
+    "cross-env": "7.0.0",
     "css-loader": "0.28.11",
     "ejs-loader": "0.3.5",
     "empty-module": "0.0.2",
