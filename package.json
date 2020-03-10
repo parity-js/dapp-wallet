@@ -128,7 +128,7 @@
     "webpack-error-notification": "0.1.8",
     "webpack-hot-middleware": "2.25.0",
     "websocket": "1.0.31",
-    "yargs": "15.1.0"
+    "yargs": "15.3.0"
   },
   "dependencies": {
     "@parity/abi": "5.1.x",
