@@ -74,7 +74,7 @@
     "coveralls": "3.0.11",
     "cross-env": "7.0.2",
     "css-loader": "0.28.11",
-    "ejs-loader": "0.3.5",
+    "ejs-loader": "0.3.6",
     "empty-module": "0.0.2",
     "enzyme": "2.9.1",
     "eslint": "3.16.1",
