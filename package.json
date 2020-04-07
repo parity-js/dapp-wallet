@@ -67,7 +67,7 @@
     "chai": "3.5.0",
     "chai-as-promised": "7.1.1",
     "chai-enzyme": "0.8.0",
-    "chalk": "3.0.0",
+    "chalk": "4.0.0",
     "circular-dependency-plugin": "4.4.0",
     "copy-webpack-plugin": "4.6.0",
     "core-js": "2.6.5",
