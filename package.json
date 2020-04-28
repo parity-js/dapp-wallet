@@ -64,7 +64,7 @@
     "babel-preset-stage-0": "6.24.1",
     "babel-register": "6.26.0",
     "babel-runtime": "6.26.0",
-    "chai": "3.5.0",
+    "chai": "4.2.0",
     "chai-as-promised": "7.1.1",
     "chai-enzyme": "0.8.0",
     "chalk": "4.0.0",
