@@ -189,7 +189,7 @@
     "redux": "4.0.5",
     "redux-actions": "2.6.5",
     "redux-thunk": "2.3.0",
-    "rlp": "2.0.0",
+    "rlp": "2.2.4",
     "scryptsy": "2.1.0",
     "solc": "ngotchac/solc-js",
     "store": "2.0.12",
